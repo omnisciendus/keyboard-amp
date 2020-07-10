@@ -1,0 +1,290 @@
+**********************************************************************
+* infile=/home/eric/src/keyboard-amp/dmtriodes.inc date=Thu Jul 9 16:39:38 2020 Converted with 
+*ps2sp V4.14
+* options: -sp3=0 -ltspice=0 -fromsub=0 -fromlib=0 -check=0 (tinylines=1)
+* copyright 2007 by Friedrich Schmidt - terms of Gnu Licence
+.subckt nh2a3 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*0.003+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.0082)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^0.423522)+uramp(V(GG))*0.005+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.0015)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*4.2)+v(0)
+bep ep 0 v=(V(EM)^1.55)*V(RP)*0.0000868+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0.0001+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000055
+cgk g k 0.0000000000075
+cga g a 0.0000000000165
+.ends
+.subckt nh3cx300 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*10+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.00536)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1)+uramp(V(GG))*0.005+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.0012)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*8.321)+v(0)
+bep ep 0 v=(V(EM)^1.25)*V(RP)*0.000533+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0.0001+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.000000000001
+cgk g k 0.000000000025
+cga g a 0.00000000001
+.ends
+.subckt nhsv6as7 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*0.01+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.0058)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^0.7)+uramp(V(GG))*0.035+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.0017)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*2.05)+v(0)
+bep ep 0 v=(V(EM)^1.5)*V(RP)*0.0005+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.000000000003
+cgk g k 0.000000000008
+cga g a 0.000000000011
+.ends
+.subckt nh6bm8 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*10+v(0)
+bgg gg 0 v=V(G)-V(K)--0.5+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.030667)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^5)+uramp(V(GG))*0.587+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.035)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*50)+v(0)
+bep ep 0 v=(V(EM)^1.5)*V(RP)*0.00000256+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.000000000004
+cgk g k 0.0000000000027
+cga g a 0.000000000004
+.ends
+.subckt nh6dj8 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*10+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.09)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^0.2)+uramp(V(GG))*0+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.02)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*33)+v(0)
+bep ep 0 v=(V(EM)^1.35)*V(RP)*0.0000795+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)--0.2)^1.5)*0+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000018
+cgk g k 0.0000000000033
+cga g a 0.0000000000014
+.ends
+.subckt nh6n1p a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*10+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.01)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1)+uramp(V(GG))*0+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.01)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*37.5)+v(0)
+bep ep 0 v=(V(EM)^1.6)*V(RP)*0.000005+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000015
+cgk g k 0.0000000000032
+cga g a 0.0000000000016
+.ends
+.subckt nh6sn7gtb a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*0.0037+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.02)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^2)+uramp(V(GG))*0.002+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.006167)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*19.2642)+v(0)
+bep ep 0 v=(V(EM)^1.4)*V(RP)*0.0000189+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0.000213+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000007
+cgk g k 0.0000000000024
+cga g a 0.0000000000039
+.ends
+.subckt nh12at7 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*0.0037+v(0)
+bgg gg 0 v=V(G)-V(K)--0.5+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.09869)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1)+uramp(V(GG))*0.1+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.012937)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*45.093)+v(0)
+bep ep 0 v=(V(EM)^1.4)*V(RP)*0.00000863+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)--0.5)^1.5)*0.00012+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000004
+cgk g k 0.0000000000023
+cga g a 0.0000000000016
+.ends
+.subckt nh12au7 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*0.0037+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.024778659)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^2.040491735)+uramp(V(GG))*0.18+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.005857103)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*14.27427)+v(0)
+bep ep 0 v=(V(EM)^1.35)*V(RP)*0.0000236+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0.00012+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.00000000000045
+cgk g k 0.0000000000018
+cga g a 0.0000000000016
+.ends
+.subckt nh12ax7 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*0.000016+v(0)
+bgg gg 0 v=V(G)-V(K)--0.53056+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.076498)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1)+uramp(V(GG))*0.18+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*-0.013621)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*87.302)+v(0)
+bep ep 0 v=(V(EM)^1.5)*V(RP)*0.00000111+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)--0.2)^1.5)*0.00001+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000007
+cgk g k 0.0000000000024
+cga g a 0.0000000000039
+.ends
+.subckt nh76 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*10+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.015)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1.8)+uramp(V(GG))*0+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.001)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*12.8)+v(0)
+bep ep 0 v=(V(EM)^1.6)*V(RP)*0.000008+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000025
+cgk g k 0.0000000000035
+cga g a 0.0000000000028
+.ends
+.subckt nh300b a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*10+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.00311)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1.013608)+uramp(V(GG))*0+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.000362)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*3.7992)+v(0)
+bep ep 0 v=(V(EM)^1.5)*V(RP)*0.000116+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.0000000000043
+cgk g k 0.000000000009
+cga g a 0.000000000015
+.ends
+.subckt sv5723 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1)*0.0018+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.0012)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^0.5)+uramp(V(GG))*0+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.0002)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*3.79928)+v(0)
+bep ep 0 v=(V(EM)^1.4)*V(RP)*0.0000425+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)-0)^1.5)*0.0000349+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.000000000001
+cgk g k 0.000000000004
+cga g a 0.000000000004
+.ends
+.subckt sv57210 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.4)*0.0008+v(0)
+bgg gg 0 v=V(G)-V(K)-0+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.001)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1)+uramp(V(GG))*-0.00117+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*0.0001)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*10)+v(0)
+bep ep 0 v=(V(EM)^1.38)*V(RP)*0.0000272+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)--0.2)^1.5)*0.0003+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.000000000001
+cgk g k 0.0000000000064
+cga g a 0.000000000005
+.ends
+.subckt nh5751 a g k times
+blim li 0 v=(uramp(V(A)-V(K))^1.5)*0.000016+v(0)
+bgg gg 0 v=V(G)-V(K)--0.53056+v(0)
+brp1 rp1 0 v=uramp(-V(GG)*0.075772)+v(0)
+brp2 rp2 0 v=V(RP1)-uramp(V(RP1)-0.999)+v(0)
+brpf rp 0 v=(1-V(RP2)^1)+uramp(V(GG))*0.131285+v(0)
+bgr gr 0 v=uramp(V(GG))-uramp(-(V(GG)*(1+V(GG)*-0.0111)))+v(0)
+bem em 0 v=uramp(V(A)-V(K)+V(GR)*62.94685)+v(0)
+bep ep 0 v=(V(EM)^1.5)*V(RP)*0.00000142+v(0)
+bel1 el1 0 v=uramp(V(EP))+v(0)
+bel el 0 v=V(EL1)-uramp(V(EL1)-V(LI))+v(0)
+bld ld 0 v=uramp(V(EP)-V(LI))+v(0)
+bak a k i=V(EL)+v(0)
+bgf gf 0 v=(uramp(V(G)-V(K)--0.2)^1.5)*0.00001+v(0)
+bg g k i=V(GF)+V(LD)+v(0)
+cak a k 0.00000000000045
+cgk g k 0.0000000000014
+cga g a 0.0000000000014
+.ends

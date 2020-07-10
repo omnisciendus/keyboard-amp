@@ -1,0 +1,62 @@
+**********************************************************************
+* infile=/home/eric/src/keyboard-amp/dmtriodep.inc date=Thu Jul 9 16:39:52 2020 Converted with 
+*ps2sp V4.14
+* options: -sp3=0 -ltspice=0 -fromsub=0 -fromlib=0 -check=0 (tinylines=1)
+* copyright 2007 by Friedrich Schmidt - terms of Gnu Licence
+.subckt nh2a3 a g k times
+xv1 a g k times triodenh_1
+.ends
+.subckt nh3cx300 a g k times
+xv1 a g k times triodenh_2
+.ends
+.subckt nhsv6as7 a g k times
+xv1 a g k times triodenh_3
+.ends
+.subckt nh6bm8 a g k times
+xv1 a g k times triodenh_4
+.ends
+.subckt nh6dj8 a g k times
+xv1 a g k times triodenh_5
+.ends
+.subckt nh6n1p a g k times
+xv1 a g k times triodenh_6
+.ends
+.subckt 6sn7gtb a g k h1 h2 times
+xv1 a g k h1 h2 times triode_7
+.ends
+.subckt nh6sn7gtb a g k times
+xv1 a g k times triodenh_8
+.ends
+.subckt 12at7 a g k h1 h2 times
+xv1 a g k h1 h2 times triode_9
+.ends
+.subckt nh12at7 a g k times
+xv1 a g k times triodenh_10
+.ends
+.subckt 12au7 a g k h1 h2 times
+xv1 a g k h1 h2 times triode_11
+.ends
+.subckt nh12au7 a g k times
+xv1 a g k times triodenh_12
+.ends
+.subckt 12ax7 a g k h1 h2 times
+xv1 a g k h1 h2 times triode_13
+.ends
+.subckt nh12ax7 a g k times
+xv1 a g k times triodenh_14
+.ends
+.subckt nh76 a g k times
+xv1 a g k times triodenh_15
+.ends
+.subckt nh300b a g k times
+xv1 a g k times triodenh_16
+.ends
+.subckt sv5723 a g k times
+xv1 a g k times triodenh_17
+.ends
+.subckt sv57210 a g k times
+xv1 a g k times triodenh_18
+.ends
+.subckt nh5751 a g k times
+xv1 a g k times triodenh_19
+.ends
