@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=43,52,1027,570,1.13194,0,0>
+  <View=43,52,1027,570,1.13194,61,0>
   <Grid=10,10,1>
   <DataSet=Pentode_Dempwolf.dat>
   <DataDisplay=Pentode_Dempwolf.dpl>
@@ -27,7 +27,7 @@
   <.PortSym -60 10 2 0>
   <.PortSym 0 60 3 0>
   <.PortSym 0 -60 1 0>
-  <.ID -40 84 SUB "1=G=2.242E-3=perveance=" "1=u=103.2=amplification=" "1=g=1.26=exponent=" "1=C=3.4=shape factor=" "1=Gg1=6.177E-4=grid perveance=" "1=x=1.314=grid exponent=" "1=Cg1=9.901=grid shape factor=" "1=Ig0=8.025E-8=extra current=" "1=ch=1.26=grid 2 exponent=" "1=Cg2=9.901=grid 2 shape factor=" "1=Gg2=6.177E-4=grid 2 perveance=" "1=kvb=1E-6=knee constant=">
+  <.ID -40 84 SUB "1=G=1.24E-3=perveance=" "1=u=8=amplification=" "1=g=1.5=exponent=" "1=C=1=shape factor=" "1=Gg1=1E-4=grid perveance=" "1=x=1.5=grid exponent=" "1=Cg1=1=grid shape factor=" "1=Ig0=8.025E-8=extra current=" "1=ch=1.5=grid 2 exponent=" "1=Cg2=1=grid 2 shape factor=" "1=Gg2=1E-4=grid 2 perveance=" "1=kvb=10=knee constant=">
   <.PortSym 60 0 4 180>
 </Symbol>
 <Components>
@@ -35,7 +35,7 @@
   <Port A 1 110 200 -23 12 0 0 "1" 0 "analog" 0>
   <Port G2 1 110 250 -23 12 0 0 "4" 0 "analog" 0>
   <Port G1 1 110 300 -23 12 0 0 "2" 0 "analog" 0>
-  <EDD D1 1 290 390 96 -26 0 3 "explicit" 0 "3" 0 "(G/C^g)*(2/pi)*arctan(V1/kvb)*ln(1 + exp(C*(((u+1)/u)*V1 + V2 + (1/u)*V3)))^g" 1 "0" 0 "(Gg1/Cg1^x)*ln(1 + exp(Cg1*(V1 + V2)))^x + Ig0" 1 "0" 0 "(Gg2/Cg2^ch)*ln(1 + exp(Cg2*(((u+1)/u)*V1 + V2 + (1/u)*V3)))^ch" 1 "0" 0>
+  <EDD D1 1 290 390 96 -26 0 3 "explicit" 0 "3" 0 "(G/C^g)*(2/pi)*arctan(V1/kvb)*ln(1 + exp(C*(((u + 1)/u)*V1 + V2 + (1/u)*V3)))^g" 1 "0" 0 "(Gg1/Cg1^x)*ln(1 + exp(Cg1*(V1 + V2)))^x" 1 "0" 0 "(Gg2/Cg2^ch)*ln(1 + exp(Cg2*(((u + 1)/u)*V1 + V2 + (1/u)*V3)))^ch" 1 "0" 0>
 </Components>
 <Wires>
   <350 420 350 490 "" 0 0 0 "">

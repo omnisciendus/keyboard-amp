@@ -1,0 +1,39 @@
+<Qucs Schematic 0.0.20>
+<Properties>
+  <View=-146,20,921,1537,1,93,180>
+  <Grid=10,10,0>
+  <DataSet=Power Amplifier.dat>
+  <DataDisplay=Power Amplifier.sch>
+  <OpenDisplay=1>
+  <Script=Power Amplifier.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 30 1143 751 653 3 #c0c0c0 1 00 1 0 0.0001 0.001 1 -4.42734 1 4.42734 1 0.41666 0.001 0.429333 315 0 225 "" "" "" "">
+	<"A1.It" #ff00ff 0 3 0 0 1>
+	<"A2.It" #00ff00 0 3 0 0 1>
+	<"OUT.Vt" #0000ff 0 3 0 0 0>
+  </Rect>
+  <Tab 0 448 804 408 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1001 315 0 225 "" "" "" "">
+	<"POS.It" #0000ff 0 3 1 0 0>
+	<"OUT.Vt" #0000ff 0 3 1 0 0>
+  </Tab>
+  <Tab -10 1517 571 267 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 "" "" "" "">
+	<"PIN" #0000ff 0 3 1 0 0>
+	<"POUT" #0000ff 0 3 1 0 0>
+	<"PVALVE" #0000ff 0 3 1 0 0>
+  </Tab>
+</Diagrams>
+<Paintings>
+</Paintings>
