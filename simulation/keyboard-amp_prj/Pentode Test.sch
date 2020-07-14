@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=0,-420,1000,926,1,0,0>
+  <View=0,-240,1000,926,1,0,0>
   <Grid=10,10,1>
   <DataSet=Pentode Test.dat>
   <DataDisplay=Pentode Test.dpl>
@@ -38,7 +38,7 @@
   <Eqn Eqn6 1 740 710 -31 19 0 0 "VEFF=(101/100)*V1 + V2 + V3/100" 1 "yes" 0>
   <.SW SW2 1 720 -90 0 77 0 0 "SW1" 1 "lin" 1 "VG1" 1 "0" 1 "-35" 1 "8" 1>
   <Sub SUB1 1 380 300 -26 68 0 0 "Pentode_Dempwolf.sch" 0 "1.24E-3" 1 "8" 1 "1.5" 1 "1" 1 "1E-4" 1 "1.5" 1 "1" 1 "8.025E-8" 1 "1.5" 1 "1" 1 "1E-4" 1 "10" 1>
-  <.SW SW1 1 540 -90 0 77 0 0 "DC1" 1 "lin" 1 "VA" 1 "-600" 1 "600" 1 "121" 1>
+  <.SW SW1 1 540 -90 0 77 0 0 "DC1" 1 "lin" 1 "VA" 1 "0" 1 "1200" 1 "241" 1>
 </Components>
 <Wires>
   <300 440 300 500 "" 0 0 0 "">

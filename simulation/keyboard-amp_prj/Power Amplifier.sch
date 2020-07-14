@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=0,-60,1473,1277,1,426,0>
+  <View=0,-30,1473,1097,1,373,0>
   <Grid=10,10,1>
   <DataSet=Power Amplifier.dat>
   <DataDisplay=Power Amplifier.dpl>
@@ -47,7 +47,7 @@
   <C C1 1 810 590 -26 17 0 0 "22 nF" 1 "" 0 "neutral" 0>
   <Vdc V1 1 790 400 18 -26 0 1 "-30 V" 1>
   <GND * 5 790 430 0 0 0 0>
-  <Vac POS 1 500 360 18 -26 0 1 "5" 1 "3000" 0 "0" 0 "0" 0>
+  <Vac POS 1 500 360 18 -26 0 1 "10" 1 "3000" 0 "0" 0 "0" 0>
   <GND * 5 500 440 0 0 0 0>
   <VCVS NEG 1 620 360 -26 34 0 0 "-1" 1 "0" 0>
 </Components>
