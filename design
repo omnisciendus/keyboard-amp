@@ -73,3 +73,17 @@ Pentodes (Power):
 6V6
 EL34 british sound, mid power
 EL84 low power
+
+Shape switch to change from hifi to distortion modes
+
+
+
+Power Supply
+AOE p. 325
+Transient Suppressor
+AC Line Filter
+Fuse
+Chassis Ground
+RC Snubber for turnoff suprression
+LED Filter Cap bleeder
+IEC Three prong chassis mounted connector (detachable power cable)

@@ -1,33 +1,35 @@
-
-
 Improve Pentode Model
 Clipping issues
 
 Order amplifier books
 Shopping List
-    thermocouple
-    voltage detection stick
-    straight tweezers
-    desk lamp
-
-    function generator (DDS digit) 150
-    dual tracking power supply 100
-
-
-    Jumpers	
-    Test Leads
     audio adapter
     audio jack
-    heat shrink
-    wire nuts
-    crimp terminals
 
     Typical Valves
-    Board
     Audio transformer (~25 turns)
 
 
-Build Power Supply
-Build Tube Tester
+Power Entry Module
+https://www.mouser.com/ProductDetail/Schaffner/FN382-4-22?qs=%2Fha2pyFaduiGxRwOp4zcgShbnP6ogzV0WsjGEgo9%252By2GDAyvBUZ7eA%3D%3D
+https://www.mouser.com/datasheet/2/355/FN_380-1733063.pdf
+
+Power Transformer
+https://www.mouser.com/ProductDetail/Triad-Magnetics/VPT230-1090?qs=%2Fha2pyFaduirRLDC5Qmj1fV%2FuLJZCtrKsaGZ7p2gGAgXG9gMCehkEw%3D%3D
+https://www.mouser.com/datasheet/2/410/media-1067365.pdf
+
+TVS
+https://www.mouser.com/ProductDetail/Littelfuse/V130LA5P?qs=FZCjKnC3RQD4REF%2Fctth4g%3D%3D
+https://www.mouser.com/datasheet/2/240/Littelfuse_Varistor_LA_Datasheet.pdf-596275.pdf
+
+Filter Capacitor
+https://www.mouser.com/ProductDetail/Vishay-BC-Components/MAL225966471E3?qs=sGAEpiMZZMvwFf0viD3Y3fHxNcSaiftwTzzqqy7Kou4Gs%252BqkavSm6Q%3D%3D
+https://www.mouser.com/datasheet/2/427/259phmsi-1762576.pdf
+
+Circuits:
+Prototype Transistor Amplifier
+Amp Power Supply (~200W 400V)
+General High Power Supply (~500W 1000V)
+Tube Tester
 
 

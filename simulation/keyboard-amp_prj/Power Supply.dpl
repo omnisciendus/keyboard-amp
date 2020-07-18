@@ -1,0 +1,32 @@
+<Qucs Schematic 0.0.20>
+<Properties>
+  <View=-47,0,800,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=Power Supply.dat>
+  <DataDisplay=Power Supply.sch>
+  <OpenDisplay=1>
+  <Script=Power Supply.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 80 382 545 342 3 #c0c0c0 1 00 1 0 0.005 0.05 1 -33.7265 100 350.214 1 -1 0.5 1 315 0 225 "" "" "" "">
+	<"OUT.Vt" #0000ff 0 3 0 0 0>
+	<"V2.It" #ff0000 0 3 0 0 1>
+  </Rect>
+  <Tab 330 720 300 200 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 "" "" "" "">
+	<"POUT" #0000ff 0 3 1 0 0>
+  </Tab>
+</Diagrams>
+<Paintings>
+</Paintings>
